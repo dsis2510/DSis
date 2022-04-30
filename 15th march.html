@@ -1,0 +1,15 @@
+<html>
+    <body>
+        <form>
+            Char:<input typr="text" id="char" size="15" /> Keycode: <input type="text" id="unicode" size="15" />
+        </form>
+        <script type="text/javascript">
+            var charfield=document.getElementById("char")
+            charfield.onkeypress=function(e){
+                var e=window.event || e
+                var keyunicode=e.charCode || e.keyCode
+                document.getElementById("unicode").value=keyunicode
+            }
+        </script>
+    </body>
+</html>

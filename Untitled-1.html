@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="Lightskyblue">
+
+    <!-- <form action="backend.php"> -->
+        <label for="name">First Name</label>
+
+        <br>
+        <div>
+            <input type="text" name="myName" id="name">
+        </div>
+        <label for="lname">Last Name</label>
+        <div>
+            <input type="text" name="myName" id="name">
+        </div>
+        <br>
+        Address
+        <div>
+            <textarea cols="20" rows="10" ></textarea>
+        </div>
+
+<br>
+        <div>
+            Class: +1 <input type="radio" name="myclass"> +2 <input type="radio" name="myclass">
+            Other <input type="radio" name="myclass">
+ </div>
+ <br>
+        <div>
+            Gender: Male <input type="radio" name="myGender"> Female <input type="radio" name="myGender"> Other <input type="radio" name="myGender"> 
+             
+        </div>
+        <br>
+        
+        <div>
+            Hobbies: Reading  <input type="checkbox" name="myhobbies"> Dancing <input type="checkbox" name="myhobbies">
+            Singing <input type="checkbox" name="myhobbies">
+        </div>
+
+        <br>
+        <div>
+            <input type="submit">
+        </div>
+        <input type="text" id="txtName"/>
+        <input type="button" id = "btnCopy" value="Copy To Label" onclick = "CopyToLabel()" />
+        <hr />
+        <label id = "lblName"></label>
+            <script type="text/javascript">
+                function CopyToLabel() {
+                    //Reference the TextBox.
+                    var txtName = document.getElementById("txtName");
+             
+                    //Reference the Label.
+                    var lblName = document.getElementById("lblName");
+             
+                    //Copy the TextBox value to Label.
+                    lblName.innerHTML = txtName.value;
+                }
+            </script>
+    
+</body>
+</html>
+
+

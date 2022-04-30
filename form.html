@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>First AWT Lecture</title>
+    </head>
+    <body>
+        <center>
+        <h1 style="color: red; text-align: center;">Chitkara University</h1>
+        <main>
+            <table style="font-size: 20px; border: 1px solid black;">
+                <tr>
+                    <td>
+                        First Name
+                    </td>
+                    <td>
+                        <input placeholder="First Name" type="text" style="height:28px; width: 250px;" id="one">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Last Name
+                    </td>
+                    <td>
+                        <input placeholder="Last Name" type="text" style="height:28px; width: 250px;" id="two">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Address
+                    </td>
+                    <td>
+                        <input placeholder="Address" type="text" style="height:28px; width: 250px;" id="three">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Courses
+                    </td>
+                    <td><input type="radio" name="classs">CSE <input type="radio" name="classs">BEE <input type="radio" name="classs">IT</td>
+                </tr>
+                <tr>
+                    <td>
+                        Hobbies
+                    </td>
+                    <td><input type="checkbox" >Dance <input type="radio">Singing <input type="radio">Coding</td>
+                </tr>
+                <tr>
+                    <td>
+                        Gender
+                    </td>
+                    <td><input type="radio" name="gender">Male <input type="radio" name="gender">Female </td>
+                </tr>
+            </table>
+            <button onclick="display()">click</button>
+        </main>
+        <div id="dis1"></div>
+        <div id="dis2"></div>
+        <div id="dis3"></div>
+        </center>
+        <script>
+            function display(){
+                var a=document.getElementById("one").value;
+                var b=document.getElementById("two").value;
+                var e=document.getElementById("three").value;
+                var c=document.getElementById("dis1");
+                var d=document.getElementById("dis2");
+                var f=document.getElementById("dis3");
+                c.innerHTML=a;
+                d.innerHTML=b;
+                f.innerHTML=e;
+            }
+    
+        </script>
+    </body>
+</html>

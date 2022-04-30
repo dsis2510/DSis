@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("#one").hide(1000);
+    $("#two").hide(3000);
+    $("#three").hide(5000);
+    $("#four").hide(7000);
+    $("#five").hide(9000);
+  });
+  $("#show").click(function(){
+    $("#one").show(1000);
+    $("#two").show(3000);
+    $("#three").show(5000);
+    $("#four").show(7000);
+    $("#five").show(8000);
+  });
+});
+</script>
+</head>
+<body>
+
+<p id="one">1st</p>
+<p id="two">2nd </p>
+<p id="three">3rd </p>
+<p id="four">4th </p>
+<p id="five">5th </p>
+
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+
+</body>
+</html>
